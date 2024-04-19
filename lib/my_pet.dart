@@ -64,18 +64,14 @@ class _MyPetState extends State<MyPet> {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(8.0),
-              decoration:  BoxDecoration(
-                border: Border.all(
-                  width: 1,
-                  color: Colors.black54
+              height: 58,
+              child: DropdownButtonFormField<String>(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  ),
+
                 ),
-                borderRadius: BorderRadius.circular(8.0)
-              ),
-              height: 50,
-              width: double.infinity,
-              child: DropdownButton<String>(
-                underline: const SizedBox.shrink(),
 
                 value: selectedItem,
                 items: [
