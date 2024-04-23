@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_bio/Search_box_session.dart';
 import 'package:pet_bio/my_pet.dart';
 import 'package:pet_bio/wellness_tips.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyPet(),
+      home: SearchBoxSession(),
     );
   }
 }
